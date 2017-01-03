@@ -25,6 +25,7 @@ namespace ProcessSwitchesLog
 
             //batch conversion
             //conversion to csv from withspace file
+            /*
             List<string> files = getFiles();
             foreach (string file in files)
             {
@@ -41,7 +42,11 @@ namespace ProcessSwitchesLog
                 niceData.Calc();
                 Console.WriteLine(niceData.ToString());
             }
-            Console.ReadLine();
+            Console.ReadLine();*/
+
+            //trigger telnet session from code
+
+
         }
 
         private static List<string> getFiles()
