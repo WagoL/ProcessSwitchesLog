@@ -65,7 +65,7 @@ namespace BL
         {
             try
             {
-                File.WriteAllText(_path,_text);
+                File.WriteAllText(_path+".csv",_text);
             }
             catch (Exception e)
             {
