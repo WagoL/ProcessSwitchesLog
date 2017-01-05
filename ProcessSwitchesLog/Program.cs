@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using BL;
+using PrimS.Telnet;
+using PrimS;
 
 namespace ProcessSwitchesLog
 {
@@ -44,7 +47,6 @@ namespace ProcessSwitchesLog
             }
             Console.ReadLine();*/
 
-            //trigger telnet session from code
 
 
         }
@@ -54,7 +56,6 @@ namespace ProcessSwitchesLog
             List<string> files = new List<string>();
             DirectoryInfo d = new DirectoryInfo(@"C:\tmp");//Assuming Test is your Folder
             FileInfo[] Files = d.GetFiles(); //Getting  files
-            string str = "";
             foreach (FileInfo file in Files)
             {
                 files.Add(file.FullName);
@@ -67,12 +68,13 @@ namespace ProcessSwitchesLog
             List<string> files = new List<string>();
             DirectoryInfo d = new DirectoryInfo(@"C:\tmp");//Assuming Test is your Folder
             FileInfo[] Files = d.GetFiles(searchParam); //Getting  files
-            string str = "";
             foreach (FileInfo file in Files)
             {
                 files.Add(file.FullName);
             }
             return files;
         }
+
+
     }
 }
