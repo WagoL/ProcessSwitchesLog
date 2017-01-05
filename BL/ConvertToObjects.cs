@@ -36,7 +36,7 @@ namespace BL
         {
             //c:\tmp\picanol-psi-la-07_03012017
             string retString =absoluteFilePath.Remove(0,7);
-            return retString.Remove(retString.Length-13);
+            return retString.Remove(retString.Length-20);
         }
     }
 }
